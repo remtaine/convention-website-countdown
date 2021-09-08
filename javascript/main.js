@@ -3,8 +3,7 @@ const timer = document.getElementById("timer");
 // Set the date we're counting down to
 let countDownDate = new Date("Oct 17, 2021 08:00:00").getTime();
 
-// Update the count down every 1 second
-let x = setInterval(function() {
+const getCountdownTime = function() {
     // Get today's date and time
     let now = new Date().getTime();
 
@@ -26,4 +25,9 @@ let x = setInterval(function() {
     clearInterval(x);
     timer.innerHTML = "EXPIRED";
     }
-}, 1000);
+}
+
+getCountdownTime();
+
+// Update the count down every 1 second
+setInterval(getCountdownTime, 1000);
