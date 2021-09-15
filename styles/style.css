@@ -213,6 +213,7 @@ img#before {
         /* max-height: 2rem; */
         width: auto;
         margin: 10px;
+        min-width: 0;
     }
 
     #text {
@@ -249,6 +250,7 @@ img#before {
         max-height: 2rem;
         width: auto;
         margin: 10px;
+        min-width: 0;
     }
 
     #text {
